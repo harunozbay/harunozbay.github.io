@@ -25,8 +25,9 @@
 -------------------------------------------------------------------*/
 
 body {
-	--def: #ffffff; 	
-	--inv: #34638e;
+	--wht: #ffffff; 	
+	--blu: #34638e;
+    --org: #faad3b;
     color: #999999;
     font-size: 14px;
     font-family: 'Ubuntu', sans-serif;
@@ -51,7 +52,7 @@ body.demos .service-widget h3 {
     border-bottom: 1px solid #ededed;
     font-size: 18px;
     padding: 20px 0;
-    background-color: #ffffff;
+    background-color: var(--wht);
 }
 
 body.demos .service-widget {
@@ -307,7 +308,7 @@ a img.aligncenter {
 -------------------------------------------------------------------*/
 
 .navbar-dark{
-	background: #ffffff;
+	background: var(--wht);
 }
 
 .navbar-dark .navbar-nav .nav-link{
@@ -320,17 +321,17 @@ a img.aligncenter {
     white-space: nowrap;
 }
 .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus{
-	color: #ffffff;
-	background: #faad3b
+	color: var(--wht);
+	background: var(--org)
 }
 .navbar-dark .navbar-nav .nav-link.active{
-	background: var(--inv);
+	background: var(--blu);
 }
 .navbar-dark .navbar-nav .nav-link::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #ffffff;
+    background: var(--wht);
     position: absolute;
     bottom: 0;
     left: 0;
@@ -353,13 +354,13 @@ a img.aligncenter {
 	padding: 11px 25px;
 	font-size: 18px;
 	border: none;
-	color: var(--inv);
+	color: var(--blu);
 	letter-spacing: 0px;
 	text-transform: uppercase;
 	transition: all 600ms cubic-bezier(0.77, 0, 0.175, 1);	
 	cursor: pointer;
-	background: #faad3b;
-	color: #ffffff;
+	background: var(--org);
+	color: var(--wht);
 	display: inline-block;
 	-webkit-user-select: none;
 	   -moz-user-select: none;
@@ -384,7 +385,7 @@ a img.aligncenter {
 }
 
 .btn-new:hover:after {
-	background: var(--inv);
+	background: var(--blu);
 	transition-delay: .4s;
 }
 
@@ -395,7 +396,7 @@ a img.aligncenter {
 	left: 50%;
 	height: 100%;
 	width: 0;
-	border: 1px solid var(--inv);
+	border: 1px solid var(--blu);
 	border-left: 0;
 	border-right: 0;
 }
@@ -405,7 +406,7 @@ a img.aligncenter {
 	left: 0;
 	height: 0;
 	width: 100%;
-	background: var(--inv);
+	background: var(--blu);
 }
 
 .from-middle:hover:before {
@@ -452,7 +453,7 @@ a img.aligncenter {
 	z-index: 1;
 }
 .heading h1{
-	color: #ffffff;
+	color: var(--wht);
 	font-weight: 700;
 	font-size: 62px;
 	text-transform: uppercase;
@@ -496,7 +497,7 @@ xclip
 .cd-headline.clip span {
   display: inline-block;
   padding: .2em 0;
-  color: #ffffff;
+  color: var(--wht);
   font-size: 30px;
 }
 .cd-headline.clip span b{
@@ -525,10 +526,10 @@ xclip
 
 
 #mainNav.navbar-shrink {
-    padding-top: 10px;
+    /* padding-top: 10px;
     padding-bottom: 10px;
-    background-color: #ffffff;
-	border-bottom: 4px solid #faad3b;
+    background-color: var(--wht); */
+	border-bottom: 4px solid var(--org);
 }
 
 #clouds{
@@ -537,10 +538,10 @@ xclip
 	z-index: 1;
 }
 #clouds path {
-    fill: #ffffff;
+    fill: var(--wht);
     bottom: -10px;
     overflow: hidden;
-    stroke: #ffffff;
+    stroke: var(--wht);
 }
 
 .section {
@@ -567,7 +568,7 @@ xclip
 }
 
 .section.wb {
-    background-color: #ffffff;
+    background-color: var(--wht);
 }
 
 .section.lb {
@@ -590,7 +591,7 @@ xclip
 }
 
 .first-section h2 {
-    color: #ffffff;
+    color: var(--wht);
     font-size: 68px;
     font-weight: 300;
     text-transform: capitalize;
@@ -606,7 +607,7 @@ xclip
     padding: 0 0 40px;
     margin: 0;
     line-height: inherit;
-    color: #ffffff;
+    color: var(--wht);
 }
 
 .macbookright {
@@ -642,7 +643,7 @@ xclip
 .section.colorsection p,
 .section.colorsection h3,
 .section.db h3 {
-    color: #ffffff;
+    color: var(--wht);
 }
 
 
@@ -669,13 +670,16 @@ xclip
 .fat-ab{}
 
 
-
+.profile-photo{
+    display: flex;
+    justify-content: center;
+}
 
 
 
 .services-inner-box{
 	padding: 15px;
-	background: #ffffff;
+	background: var(--wht);
 	margin-bottom: 30px;
 	text-align: center;
 	position: relative;
@@ -684,7 +688,7 @@ xclip
 .services-inner-box::before {
 	content: "";
 	position: absolute;
-	background: #faad3b;
+	background: var(--org);
 	width: 0;
 	height: 0;
 	top: 50%;
@@ -722,13 +726,13 @@ xclip
 	line-height: 90px;
 	margin: 0 auto;
 	margin-bottom: 20px;
-	background: var(--inv);
+	background: var(--blu);
 	position: relative;
 	z-index: 1;
 }
 .ser-icon i{
 	font-size: 50px;
-	color: #ffffff;
+	color: var(--wht);
 	position: relative;
 	z-index: 1;
 }
@@ -746,10 +750,10 @@ xclip
 }
 
 .services-inner-box:hover h2{
-	color: #ffffff;
+	color: var(--wht);
 }
 .services-inner-box:hover p{
-	color: #ffffff;
+	color: var(--wht);
 }
 
 
@@ -855,7 +859,7 @@ xclip
 
 .da-thumbs .pitem a div h3 {
     display: block;
-    color: #ffffff;
+    color: var(--wht);
     font-size: 20px;
     padding: 30px 15px;
     text-transform: capitalize;
@@ -864,7 +868,7 @@ xclip
 
 .da-thumbs .pitem a div h3 small {
     display: block;
-    color: #ffffff;
+    color: var(--wht);
     margin-top: 5px;
     font-size: 13px;
     font-weight: 300;
@@ -873,7 +877,7 @@ xclip
 .da-thumbs .pitem a div i {
     background-color: #1f1f1f;
     position: absolute;
-    color: #ffffff !important;
+    color: var(--wht) !important;
     bottom: 0;
     font-size: 15px;
     z-index: 12;
@@ -902,7 +906,7 @@ xclip
 }
 
 .desc i {
-    color: #ffffff;
+    color: var(--wht);
     font-size: 37px;
     vertical-align: middle;
     margin-right: 12px;
@@ -911,8 +915,8 @@ xclip
 .desc {
     padding: 30px;
     position: relative;
-    background: var(--inv);
-    border: 10px solid #faad3b;
+    background: var(--blu);
+    border: 10px solid var(--org);
 }
 
 .testi-meta {
@@ -956,7 +960,7 @@ xclip
 .testimonial small,
 .testimonial .lead {
     background-color: transparent;
-    color: #ffffff;
+    color: var(--wht);
     display: block;
     font-size: 16px;
     font-style: normal;
@@ -1003,7 +1007,7 @@ xclip
 
 .pricing-table-header {
     padding: 30px 0 25px 0;
-    background: #ffffff;
+    background: var(--wht);
 }
 
 .pricing-table-header h2 {
@@ -1051,7 +1055,7 @@ xclip
 
 .pricing-table-highlighted h3,
 .pricing-table-highlighted h2 {
-    color: #ffffff !important;
+    color: var(--wht) !important;
 }
 
 .pricing-table-sign-up {
@@ -1200,7 +1204,7 @@ xclip
 
 .service-widget h3 {
     font-size: 21px;
-    color: #ffffff;
+    color: var(--wht);
     padding: 20px 0 12px;
     margin: 0;
 }
@@ -1244,7 +1248,7 @@ xclip
 }
 
 .participate-wrap figure figcaption .global-radius{
-	background: #ffffff;
+	background: var(--wht);
 	width: 38px;
 	height: 38px;
 	display: inline-block;
@@ -1311,7 +1315,7 @@ xclip
 	margin-right: 15px;
 }
 .message-box ul li a{
-	background: var(--inv);
+	background: var(--blu);
 	font-size: 24px;
 	width: 60px;
 	height: 40px;
@@ -1319,10 +1323,10 @@ xclip
 	text-align: center;
 	line-height: 40px;
 	border-radius: 50px;
-	color: #ffffff;
+	color: var(--wht);
 }
 .message-box ul li a:hover{
-	color: #faad3b;
+	color: var(--org);
 }
 
 
@@ -1364,7 +1368,7 @@ xclip
 
 .section.wb .hover-up h3{
 	font-size: 32px;
-	color: #ffffff;
+	color: var(--wht);
 }
 
 .section.wb .hover-up p{
@@ -1373,7 +1377,7 @@ xclip
 
 .playbutton {
     position: absolute;
-    color: #ffffff !important;
+    color: var(--wht) !important;
     top: 40%;
     font-size: 60px;
     z-index: 12;
@@ -1386,7 +1390,7 @@ xclip
 .hoverbutton {
     background-color: #333333;
     position: absolute;
-    color: #ffffff !important;
+    color: var(--wht) !important;
     top: 70%;
     font-size: 21px;
     z-index: 12;
@@ -1492,7 +1496,7 @@ hr.invis1 {
 }
 
 .code-wrapper {
-    border: 1px solid #ffffff;
+    border: 1px solid var(--wht);
     display: block;
     overflow: hidden;
     width: 100%;
@@ -1529,7 +1533,7 @@ hr.invis1 {
 }
 
 .filter-button-group button.active{
-	background: #faad3b;
+	background: var(--org);
 	color: #fff;
 	box-shadow: 2px 20px 45px 5px rgba(0,0,0,.2);	
 }
@@ -1662,7 +1666,7 @@ hr.invis1 {
 	font-size: 1.1em;
 	font-weight: normal;
 	opacity: 0;
-	color: #ffffff;
+	color: var(--wht);
 }
 
 .spi-hr:hover h3, .spi-hr.hover h3, .spi-hr:hover h4, .spi-hr.hover h4 {
@@ -1699,7 +1703,7 @@ hr.invis1 {
 .post-box{
 	-webkit-box-shadow: 0px 5px 35px 0px rgba(148, 146, 245, 0.15);
 	box-shadow: 0px 5px 35px 0px rgba(148, 146, 245, 0.15);
-	background: #ffffff;
+	background: var(--wht);
 }
 
 .post-box:hover .post-thumb::before{
@@ -1726,7 +1730,7 @@ hr.invis1 {
 
 .post-info{
 	padding: 0px 15px 40px 15px;
-	background: #ffffff;
+	background: var(--wht);
 	text-align: left;
 	margin-top: 40px;
 }
@@ -1757,7 +1761,7 @@ hr.invis1 {
 
 .customwidget h1 {
     font-size: 44px;
-    color: #ffffff;
+    color: var(--wht);
     padding: 15px 0 25px;
     margin: 0;
     line-height: 1 !important;
@@ -1775,7 +1779,7 @@ hr.invis1 {
 }
 
 .customwidget li {
-    color: #ffffff;
+    color: var(--wht);
     margin-right: 10px;
 }
 
@@ -2285,7 +2289,7 @@ select.mobile-device {
 
 
 #contact .section-title p{
-	color: #ffffff;
+	color: var(--wht);
 }
 
 .contact_form textarea.form-control{
@@ -2339,7 +2343,7 @@ select.mobile-device {
   z-index: 1;
   opacity: 1;
   padding: 30px 0 30px 10px;
-  background-color: #ffffff;
+  background-color: var(--wht);
   width: 60%;
   -webkit-transform: translateX(150%);
   transform: translateX(150%);
@@ -2355,7 +2359,7 @@ select.mobile-device {
   height: 0;
   border-style: solid;
   border-width: 120px 120px 120px 0;
-  border-color: transparent #ffffff transparent transparent;
+  border-color: transparent var(--wht) transparent transparent;
 }
 
 .snip1401 h3,
@@ -2381,7 +2385,7 @@ select.mobile-device {
   left: 0;
   padding: 20px 30px;
   font-size: 44px;
-  color: #ffffff;
+  color: var(--wht);
   opacity: 0;
 }
 .snip1401 a {
@@ -2614,7 +2618,7 @@ select.mobile-device {
 }
 
 .footer-distributed .footer-company-name a{
-	color: #ffffff;
+	color: var(--wht);
 }
 
 .footer-distributed .footer-company-name a:hover{
@@ -2642,7 +2646,7 @@ select.mobile-device {
 }
 
 .dmtop {
-    background-color: var(--inv);
+    background-color: var(--blu);
     z-index: 100;
     width: 50px;
     height: 50px;
@@ -2653,7 +2657,7 @@ select.mobile-device {
     right: 20px;
     text-align: center;
     font-size: 28px;
-    color: #ffffff !important;
+    color: var(--wht) !important;
     cursor: pointer;
     -webkit-transition: all .7s ease-in-out;
     -moz-transition: all .7s ease-in-out;
@@ -2672,7 +2676,7 @@ select.mobile-device {
     display: block;
     line-height: 100px;
     font-size: 34px;
-    color: #ffffff;
+    color: var(--wht);
     margin: 0 auto;
     text-align: center;
     padding: 0 !important;
@@ -2690,7 +2694,7 @@ select.mobile-device {
 
 .stat-wrap p {
     font-size: 38px;
-    color: #ffffff;
+    color: var(--wht);
     margin: 0;
     font-weight: 300;
     padding: 4px 0 0;
@@ -2726,7 +2730,7 @@ select.mobile-device {
     transform: rotate(0);
   }
   55% {
-    background-color: #faad3b;
+    background-color: var(--org);
   }
   100% {
     transform: rotate(90deg);
@@ -2737,7 +2741,7 @@ select.mobile-device {
     transform: rotate(0);
   }
   55% {
-    background-color: #faad3b;
+    background-color: var(--org);
   }
   100% {
     transform: rotate(-90deg);
@@ -2757,7 +2761,7 @@ select.mobile-device {
   display: block;
   width: 40px;
   height: 40px;
-  background-color: var(--inv);
+  background-color: var(--blu);
   animation: loaderBlock 1.2s infinite ease-in-out both;
 }
 .loader span:nth-child(1) {
@@ -2795,8 +2799,8 @@ select.mobile-device {
 .btn-light {
     padding: 10px 40px;
     font-size: 18px;
-    border: 2px solid #ffffff !important;
-    color: #ffffff;
+    border: 2px solid var(--wht) !important;
+    color: var(--wht);
     background-color: transparent;
 }
 
